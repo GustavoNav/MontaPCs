@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityListaComponentes">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/blueBackground_1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/background_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <ImageView
+        android:id="@+id/imageView_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/motherboard"
+        app:layout_constraintStart_toStartOf="@+id/blueBackground_1"
+        app:layout_constraintTop_toTopOf="@+id/blueBackground_1" />
+
+    <TextView
+        android:id="@+id/textComponente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Texto"
+        android:textAlignment="viewStart"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView_1"
+        app:layout_constraintTop_toTopOf="@+id/blueBackground_1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewComponente"
+        android:layout_width="0dp"
+        android:layout_height="368dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/blueBackground_1"
+        app:layout_constraintStart_toStartOf="@+id/blueBackground_1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFiltro" />
+
+    <TextView
+        android:id="@+id/textViewFiltro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Filtragem Automática por Compatibilidade"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="@+id/blueBackground_1"
+        app:layout_constraintStart_toStartOf="@+id/blueBackground_1"
+        app:layout_constraintTop_toBottomOf="@+id/blueBackground_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

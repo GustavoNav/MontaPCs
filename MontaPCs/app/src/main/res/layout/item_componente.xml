@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/buttonItem"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/color_1"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/computer"
+        android:drawablePadding="8dp" />
+</RelativeLayout>

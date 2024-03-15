@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAjuda">
+
+    <ImageView
+        android:id="@+id/quadro1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/quadro5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintStart_toEndOf="@+id/quadro1"
+        app:layout_constraintTop_toTopOf="@+id/quadro4" />
+
+    <ImageView
+        android:id="@+id/quadro6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintStart_toEndOf="@+id/quadro5"
+        app:layout_constraintTop_toTopOf="@+id/quadro4" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/quadro4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintEnd_toStartOf="@+id/quadro5"
+        app:layout_constraintStart_toEndOf="@+id/quadro3"
+        app:layout_constraintTop_toBottomOf="@+id/quadro1" />
+
+    <ImageView
+        android:id="@+id/quadro3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintEnd_toStartOf="@+id/quadro1"
+        app:layout_constraintTop_toTopOf="@+id/quadro4" />
+
+    <ImageView
+        android:id="@+id/quadro2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/background_2"
+        android:src="@null"
+        app:layout_constraintEnd_toStartOf="@+id/quadro3"
+        app:layout_constraintTop_toTopOf="@+id/quadro4" />
+
+    <ImageView
+        android:id="@+id/pc_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro1"
+        app:layout_constraintStart_toStartOf="@+id/quadro1"
+        app:layout_constraintTop_toTopOf="@+id/quadro1"
+        app:srcCompat="@drawable/computer" />
+
+    <ImageView
+        android:id="@+id/motherboard_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro2"
+        app:layout_constraintStart_toStartOf="@+id/quadro2"
+        app:layout_constraintTop_toTopOf="@+id/quadro2"
+        app:srcCompat="@drawable/motherboard" />
+
+    <ImageView
+        android:id="@+id/cpu_icon"
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro3"
+        app:layout_constraintStart_toStartOf="@+id/quadro3"
+        app:layout_constraintTop_toTopOf="@+id/quadro3"
+        app:srcCompat="@drawable/cpu" />
+
+    <ImageView
+        android:id="@+id/gpu_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quadro4"
+        app:layout_constraintTop_toTopOf="@+id/quadro4"
+        app:srcCompat="@drawable/gpu" />
+
+    <ImageView
+        android:id="@+id/ram_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro5"
+        app:layout_constraintStart_toStartOf="@+id/quadro5"
+        app:layout_constraintTop_toTopOf="@+id/quadro5"
+        app:srcCompat="@drawable/ram" />
+
+    <ImageView
+        android:id="@+id/mem_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro6"
+        app:layout_constraintStart_toStartOf="@+id/quadro6"
+        app:layout_constraintTop_toTopOf="@+id/quadro6"
+        app:srcCompat="@drawable/mem" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/quadro6"
+        app:layout_constraintStart_toStartOf="@+id/quadro2"
+        app:layout_constraintTop_toBottomOf="@+id/quadro4">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Conteúdo do TextView"
+            android:textSize="18sp" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
